@@ -1,0 +1,89 @@
+.content {
+  min-height: 85vh;
+}
+
+footer {
+  max-height: 15vh;
+}
+
+.me img {
+  margin-left: auto;
+}
+
+.items {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+}
+
+.portofolio .item {
+  display: inline-block;
+  min-height: 350px;
+  width: 500px;
+  margin: 2em 2em 0 0;
+  white-space: wrap;
+}
+
+.blog .item {
+  display: inline-block;
+  min-height: 250px;
+  width: 300px;
+  margin: 2em 2em 0 0;
+  white-space: wrap;
+}
+
+.desk {
+  white-space: wrapper;
+}
+
+.item h1 {
+  overflow-wrap: break-word;
+}
+
+.c-card img {
+  transition: transform 0.3s ease-in-out;
+}
+.c-card:hover img {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1536px) {
+  .items {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portofolio .item {
+    min-height: 350px;
+    width: 450px;
+  }
+
+  .blog .item {
+    min-height: 200px;
+    width: 250px;
+  }
+
+  .me img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .medsos {
+    margin: 1.5rem 0;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}
